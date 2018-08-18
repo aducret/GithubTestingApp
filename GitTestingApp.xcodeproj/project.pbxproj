@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		46512F8D2128D4D100E5335E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512F8C2128D4D100E5335E /* AppDelegate.swift */; };
-		46512F8F2128D4D100E5335E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512F8E2128D4D100E5335E /* ViewController.swift */; };
-		46512F922128D4D100E5335E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46512F902128D4D100E5335E /* Main.storyboard */; };
+		46512F8F2128D4D100E5335E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512F8E2128D4D100E5335E /* HomeViewController.swift */; };
 		46512F942128D4D200E5335E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46512F932128D4D200E5335E /* Assets.xcassets */; };
 		46512F972128D4D200E5335E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46512F952128D4D200E5335E /* LaunchScreen.storyboard */; };
+		46512FA12128D56400E5335E /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46512FA02128D56400E5335E /* Swinject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46512F892128D4D100E5335E /* GitTestingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTestingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46512F8C2128D4D100E5335E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46512F8E2128D4D100E5335E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46512F912128D4D100E5335E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46512F8E2128D4D100E5335E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		46512F932128D4D200E5335E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46512F962128D4D200E5335E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46512F982128D4D200E5335E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46512FA02128D56400E5335E /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46512FA12128D56400E5335E /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +41,7 @@
 			children = (
 				46512F8B2128D4D100E5335E /* GitTestingApp */,
 				46512F8A2128D4D100E5335E /* Products */,
+				46512F9F2128D56400E5335E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +56,29 @@
 		46512F8B2128D4D100E5335E /* GitTestingApp */ = {
 			isa = PBXGroup;
 			children = (
+				46512FA22128DD0F00E5335E /* Screens */,
 				46512F8C2128D4D100E5335E /* AppDelegate.swift */,
-				46512F8E2128D4D100E5335E /* ViewController.swift */,
-				46512F902128D4D100E5335E /* Main.storyboard */,
 				46512F932128D4D200E5335E /* Assets.xcassets */,
 				46512F952128D4D200E5335E /* LaunchScreen.storyboard */,
 				46512F982128D4D200E5335E /* Info.plist */,
 			);
 			path = GitTestingApp;
+			sourceTree = "<group>";
+		};
+		46512F9F2128D56400E5335E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46512FA02128D56400E5335E /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46512FA22128DD0F00E5335E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				46512F8E2128D4D100E5335E /* HomeViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +91,7 @@
 				46512F852128D4D100E5335E /* Sources */,
 				46512F862128D4D100E5335E /* Frameworks */,
 				46512F872128D4D100E5335E /* Resources */,
+				46512F9E2128D4DE00E5335E /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -124,18 +142,36 @@
 			files = (
 				46512F972128D4D200E5335E /* LaunchScreen.storyboard in Resources */,
 				46512F942128D4D200E5335E /* Assets.xcassets in Resources */,
-				46512F922128D4D100E5335E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46512F9E2128D4DE00E5335E /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46512F852128D4D100E5335E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46512F8F2128D4D100E5335E /* ViewController.swift in Sources */,
+				46512F8F2128D4D100E5335E /* HomeViewController.swift in Sources */,
 				46512F8D2128D4D100E5335E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46512F902128D4D100E5335E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46512F912128D4D100E5335E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46512F952128D4D200E5335E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +310,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X8AT927C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitTestingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +332,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X8AT927C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitTestingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
