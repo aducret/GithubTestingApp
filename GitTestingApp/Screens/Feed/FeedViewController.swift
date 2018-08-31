@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedViewModelController.swift
 //  GitTestingApp
 //
 //  Created by Argentino Ducret on 18/08/2018.
@@ -8,11 +8,18 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class FeedViewModelController: UIViewController {
+
+    private let _view = FeedView.loadFromNib()
+
+    override func loadView() {
+        view = _view
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
     }
 
 }

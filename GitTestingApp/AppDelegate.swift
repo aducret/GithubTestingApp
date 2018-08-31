@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
-        let homeViewController = HomeViewController()
+        let homeViewController = FeedViewModelController()
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         window.rootViewController = homeNavigationController
         window.makeKeyAndVisible()

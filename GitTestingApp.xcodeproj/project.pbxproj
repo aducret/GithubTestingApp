@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		46512F8D2128D4D100E5335E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512F8C2128D4D100E5335E /* AppDelegate.swift */; };
-		46512F8F2128D4D100E5335E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512F8E2128D4D100E5335E /* HomeViewController.swift */; };
+		46512F8F2128D4D100E5335E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512F8E2128D4D100E5335E /* FeedViewController.swift */; };
 		46512F942128D4D200E5335E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46512F932128D4D200E5335E /* Assets.xcassets */; };
 		46512F972128D4D200E5335E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46512F952128D4D200E5335E /* LaunchScreen.storyboard */; };
 		46512FA12128D56400E5335E /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46512FA02128D56400E5335E /* Swinject.framework */; };
+		46512FA82128DE0700E5335E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512FA72128DE0700E5335E /* FeedViewModel.swift */; };
+		46512FAC2128DF5600E5335E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512FAB2128DF5600E5335E /* UIViewExtension.swift */; };
+		46512FB82128EAFD00E5335E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46512FB72128EAFD00E5335E /* FeedView.swift */; };
+		46512FBA2128EB0400E5335E /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46512FB92128EB0400E5335E /* FeedView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46512F892128D4D100E5335E /* GitTestingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTestingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46512F8C2128D4D100E5335E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46512F8E2128D4D100E5335E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46512F8E2128D4D100E5335E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		46512F932128D4D200E5335E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46512F962128D4D200E5335E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46512F982128D4D200E5335E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46512FA02128D56400E5335E /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		46512FA72128DE0700E5335E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		46512FAB2128DF5600E5335E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		46512FB72128EAFD00E5335E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		46512FB92128EB0400E5335E /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		46512F8B2128D4D100E5335E /* GitTestingApp */ = {
 			isa = PBXGroup;
 			children = (
+				46512FA92128DF4400E5335E /* Extensions */,
 				46512FA22128DD0F00E5335E /* Screens */,
 				46512F8C2128D4D100E5335E /* AppDelegate.swift */,
 				46512F932128D4D200E5335E /* Assets.xcassets */,
@@ -76,9 +85,28 @@
 		46512FA22128DD0F00E5335E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				46512F8E2128D4D100E5335E /* HomeViewController.swift */,
+				46512FBB2128EB6D00E5335E /* Feed */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		46512FA92128DF4400E5335E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46512FAB2128DF5600E5335E /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46512FBB2128EB6D00E5335E /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				46512F8E2128D4D100E5335E /* FeedViewController.swift */,
+				46512FA72128DE0700E5335E /* FeedViewModel.swift */,
+				46512FB72128EAFD00E5335E /* FeedView.swift */,
+				46512FB92128EB0400E5335E /* FeedView.xib */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +170,7 @@
 			files = (
 				46512F972128D4D200E5335E /* LaunchScreen.storyboard in Resources */,
 				46512F942128D4D200E5335E /* Assets.xcassets in Resources */,
+				46512FBA2128EB0400E5335E /* FeedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46512F8F2128D4D100E5335E /* HomeViewController.swift in Sources */,
+				46512FAC2128DF5600E5335E /* UIViewExtension.swift in Sources */,
+				46512F8F2128D4D100E5335E /* FeedViewController.swift in Sources */,
 				46512F8D2128D4D100E5335E /* AppDelegate.swift in Sources */,
+				46512FB82128EAFD00E5335E /* FeedView.swift in Sources */,
+				46512FA82128DE0700E5335E /* FeedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
